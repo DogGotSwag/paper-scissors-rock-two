@@ -7,3 +7,17 @@ code. This a skilled ive never really touched on and I think it
 is needed for later on when creating more complex systems 
 and working the real world with other software developers/people
 of different fields. 
+
+<<<<<<<<<< Pseudocode: >>>>>>>>>>
+
+function named getComputerChoice.
+
+INIT num
+COMPUTE random number between 1 and 3
+SET num to the result
+
+CASE num OF
+    1: RETURN "paper"
+    2: RETURN "scissors"
+    3: RETURN "rock"
+ENDCASE
