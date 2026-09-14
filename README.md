@@ -62,29 +62,28 @@ ENDIF
 
 
 << function playGame >>
+    SET humanScore to zero
+    SET computerScore to zero
 
-SET humanScore to zero
-SET computerScore to zero
+    FOR 1 to 5
+        CALL getHumanChoice RETURNING a string
+        SET humanChoice to return result
+        
+        CALL getComputerChoice RETURNING a string
+        SET computerChoice to return result
 
-FOR 1 to 5
-    CALL getHumanChoice RETURNING a string
-    SET humanChoice to return result
-    
-    CALL getComputerChoice RETURNING a string
-    SET computerChoice to return result
+        CALL playRound with humanChoice and computerChoice RETURNING a number
+        SET res to return result
+        CASE res OF
+            1: ADD one to humanScore
+            2: ADD one to computerScore
+        ENDCASE
+    ENDFOR
 
-    CALL playRound with humanChoice and computerChoice RETURNING a number
-    SET res to return result
-    CASE res OF
-        1: ADD one to humanScore
-        2: ADD one to computerScore
-    ENDCASE
-ENDFOR
-
-IF humanScore is greater than computerScore THEN
-    PRINT "you are the winner!!"
-ELSE if humanScore is equal to computerScore THEN
-    Print "you both tied lol"
-ELSE
-    PRINT "oh no u lost scoreboarddd!!"
-ENDIF
+    IF humanScore is greater than computerScore THEN
+        PRINT "you are the winner!!"
+    ELSE if humanScore is equal to computerScore THEN
+        Print "you both tied lol"
+    ELSE
+        PRINT "oh no u lost scoreboarddd!!"
+    ENDIF
