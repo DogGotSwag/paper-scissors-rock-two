@@ -1,5 +1,3 @@
-
-
 function getComputerChoice() {
     let num = Math.floor(Math.random() * 3) + 1;
     switch (num) {
@@ -10,4 +8,8 @@ function getComputerChoice() {
         case 3:
             return "rock";
     }
+}
+
+function getHumanChoice() {
+    return prompt("paper, scissors or rock???");
 }
