@@ -28,3 +28,20 @@ ENDCASE
 
 OBTAIN input from user either "paper"/"scissors"/"rock"
 RETURN result 
+
+
+<< function playRound >>
+
+SET humanChoice to lowercase
+SET computerChoice to lowercase
+
+IF humanChoice is the same as computerChoice THEN
+    PRINT you tie!
+ELSE IF humanChoice is "paper" and computerChoice is "rock" THEN
+    PRINT “You WIN! Paper beats Rock”
+ELSE IF humanChoice is "scissors" and computerChoice is "paper" THEN
+    PRINT “You WIN! Scissors beats Paper”
+ELSE IF humanChoice is "rock" and computerChoice is "scissors" THEN
+    PRINT “You WIN! Rock beats Scissors”
+ELSE
+    PRINT “You Lose! computerChoice beats humanChoice”
