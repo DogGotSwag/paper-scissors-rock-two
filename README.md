@@ -16,9 +16,10 @@ or more complex functions. but it did help me think abt the functions from
 a different angle and make better logic i think. so definitely a useful tool which 
 i hope to someday use with a team of developers
 
-<<<<<<<<<< Pseudocode: >>>>>>>>>>
+## Pseudocode:
 
-<< function getComputerChoice >>
+### function getComputerChoice
+
 ```
 INIT num
 COMPUTE random number between 1 and 3
@@ -33,7 +34,7 @@ ENDCASE
 
 
 
-<< function getHumanChoice >>
+### function getHumanChoice
 
 ```
 OBTAIN input from user either "paper"/"scissors"/"rock"
@@ -41,7 +42,7 @@ RETURN result
 ```
 
 
-<< function playRound >>
+### function playRound
 
 ```
 SET humanChoice to lowercase
@@ -65,8 +66,7 @@ ELSE
 ENDIF
 ```
 
-
-<< function playGame >
+### function playGame
 ```
     SET humanScore to zero
     SET computerScore to zero
