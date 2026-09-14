@@ -13,3 +13,6 @@ function getComputerChoice() {
 function getHumanChoice() {
     return prompt("paper, scissors or rock???");
 }
+
+let humanScore = 0;
+let computerScore = 0;
