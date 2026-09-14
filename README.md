@@ -61,8 +61,8 @@ ELSE
 ENDIF
 
 
-<< function playGame >>
-BEGIN
+<< function playGame >
+```
     SET humanScore to zero
     SET computerScore to zero
     FOR 1 to 5
@@ -87,4 +87,4 @@ BEGIN
     ELSE
         PRINT "oh no u lost scoreboarddd!!"
     ENDIF
-END
+```
