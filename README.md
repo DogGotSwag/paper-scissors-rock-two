@@ -44,4 +44,4 @@ ELSE IF humanChoice is "scissors" and computerChoice is "paper" THEN
 ELSE IF humanChoice is "rock" and computerChoice is "scissors" THEN
     PRINT “You WIN! Rock beats Scissors”
 ELSE
-    PRINT “You Lose! computerChoice beats humanChoice”
+    PRINT “You Lose!" computerChoice with first letter capitalized only "beats" humanChoice first letter capitalized only
