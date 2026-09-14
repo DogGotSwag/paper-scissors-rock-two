@@ -10,7 +10,7 @@ of different fields.
 
 <<<<<<<<<< Pseudocode: >>>>>>>>>>
 
-function named getComputerChoice.
+<< function getComputerChoice >>
 
 INIT num
 COMPUTE random number between 1 and 3
@@ -21,3 +21,10 @@ CASE num OF
     2: RETURN "scissors"
     3: RETURN "rock"
 ENDCASE
+
+
+
+<< function getHumanChoice >>
+
+OBTAIN input from user either "paper"/"scissors"/"rock"
+RETURN result 
