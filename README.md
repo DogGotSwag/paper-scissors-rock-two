@@ -37,11 +37,19 @@ SET computerChoice to lowercase
 
 IF humanChoice is the same as computerChoice THEN
     PRINT you tie!
+    RETURN 0
 ELSE IF humanChoice is "paper" and computerChoice is "rock" THEN
     PRINT “You WIN! Paper beats Rock”
+    RETURN 1
 ELSE IF humanChoice is "scissors" and computerChoice is "paper" THEN
     PRINT “You WIN! Scissors beats Paper”
+    RETURN 1
 ELSE IF humanChoice is "rock" and computerChoice is "scissors" THEN
     PRINT “You WIN! Rock beats Scissors”
+    RETURN 1
 ELSE
     PRINT “You Lose!" computerChoice with first letter capitalized only "beats" humanChoice first letter capitalized only
+    RETURN 2
+ENDIF
+
+
