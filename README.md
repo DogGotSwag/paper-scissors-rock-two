@@ -8,6 +8,14 @@ is needed for later on when creating more complex systems
 and working the real world with other software developers/people
 of different fields. 
 
+Well if im being honest it did not find it pleasurable to write
+pseudocode, it was kinda time consuming kinda cuz i had to 
+look up or check how to express different. but ill get better at it the more i 
+practice. I probably wont write the pseudocode for all code maybe just the bigger
+or more complex functions. but it did help me think abt the functions from
+a different angle and make better logic i think. so definitely a useful tool which 
+i hope to someday use with a team of developers
+
 <<<<<<<<<< Pseudocode: >>>>>>>>>>
 
 << function getComputerChoice >>
