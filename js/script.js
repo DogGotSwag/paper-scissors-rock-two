@@ -39,3 +39,31 @@ function playRound(humanChoice, computerChoice) {
         return 2;
     }
 }
+
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
+    for(let i = 0; i < 5; i++) {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+        let res = playRound(humanChoice, computerChoice);
+        switch(res){
+            case 1:
+                humanScore++;
+                break;
+            case 2:
+                computerScore++;
+                break;
+        }
+    }
+
+    if (humanScore > computerScore){
+        console.log("you are the winner!!");
+    } else if (humanScore == computerScore) {
+        console.log("you both tied lol");
+    } else{
+        console.log("oh no u lost scoreboarddd!!");
+    }
+}
+
+playGame();
