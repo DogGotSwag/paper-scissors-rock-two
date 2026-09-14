@@ -19,7 +19,7 @@ i hope to someday use with a team of developers
 <<<<<<<<<< Pseudocode: >>>>>>>>>>
 
 << function getComputerChoice >>
-
+```
 INIT num
 COMPUTE random number between 1 and 3
 SET num to the result
@@ -29,17 +29,21 @@ CASE num OF
     2: RETURN "scissors"
     3: RETURN "rock"
 ENDCASE
+```
 
 
 
 << function getHumanChoice >>
 
+```
 OBTAIN input from user either "paper"/"scissors"/"rock"
 RETURN result 
+```
 
 
 << function playRound >>
 
+```
 SET humanChoice to lowercase
 SET computerChoice to lowercase
 
@@ -59,6 +63,7 @@ ELSE
     PRINT “You Lose!" computerChoice with first letter capitalized only "beats" humanChoice first letter capitalized only
     RETURN 2
 ENDIF
+```
 
 
 << function playGame >
