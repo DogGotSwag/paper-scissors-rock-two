@@ -53,3 +53,24 @@ ELSE
 ENDIF
 
 
+<< function playGame >>
+
+SET humanScore to zero
+SET computerScore to zero
+
+FOR 1 to 5
+    CALL playRound RETURNING a number
+    SET res to return result
+    CASE res OF
+        1: ADD one to humanScore
+        2: ADD one to computerScore
+    ENDCASE
+ENDFOR
+
+IF humanScore is greater than computerScore THEN
+    PRINT "you are the winner!!"
+ELSE if humanScore is equal to computerScore THEN
+    Print "you both tied lol"
+ELSE
+    PRINT "oh no u lost scoreboarddd!!"
+ENDIF
