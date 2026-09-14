@@ -62,9 +62,9 @@ ENDIF
 
 
 << function playGame >>
+BEGIN
     SET humanScore to zero
     SET computerScore to zero
-
     FOR 1 to 5
         CALL getHumanChoice RETURNING a string
         SET humanChoice to return result
@@ -87,3 +87,4 @@ ENDIF
     ELSE
         PRINT "oh no u lost scoreboarddd!!"
     ENDIF
+END
