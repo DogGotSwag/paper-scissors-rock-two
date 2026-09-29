@@ -72,6 +72,13 @@ let computerScore = 0;
 buttonContainer.addEventListener("click", (e) => {
     let playerSelection = e.target.innerText;
     playRound(playerSelection, getComputerChoice());
+
+    if(humanScore === 5) {
+        results.textContent = "U are the winner!!";
+    } 
+    if(computerScore == 5){
+        results.textContent = "U lost to the bot wat a loser";
+    }
 });
 
 let results = document.createElement("div");
