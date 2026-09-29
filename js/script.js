@@ -40,3 +40,12 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+
+let buttonPaper = document.createElement("button");
+buttonPaper.innerText = "paper";
+let buttonScissors = document.createElement("button");
+buttonScissors.innerText = "scissors";
+let buttonRock = document.createElement("button");
+buttonRock.innerText = "rock";
+
+
