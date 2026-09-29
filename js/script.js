@@ -48,4 +48,10 @@ buttonScissors.innerText = "scissors";
 let buttonRock = document.createElement("button");
 buttonRock.innerText = "rock";
 
+let buttonContainer = document.createElement("ul");
 
+buttonContainer.appendChild(buttonPaper);
+buttonContainer.appendChild(buttonScissors);
+buttonContainer.appendChild(buttonRock);
+
+document.body.appendChild(buttonContainer);
