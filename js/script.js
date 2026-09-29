@@ -16,7 +16,11 @@ function getHumanChoice() {
 
 function updateResultsDiv(newResultsText) {
     let results = document.querySelector(".results");
-    results.textContent = newResultsText;
+    results.textContent = `
+    Ur Score: ${humanScore}
+    Computer Score: ${computerScore}
+    ${newResultsText}
+    `;
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -28,18 +32,22 @@ function playRound(humanChoice, computerChoice) {
         return 0;
     }
     else if(humanChoice == "paper" && computerChoice == "rock"){
+        humanScore++
         updateResultsDiv("You WIN! Paper beats Rock");
         return 1;
     }
     else if(humanChoice == "scissors" && computerChoice == "paper"){
+        humanScore++
         updateResultsDiv("You WIN! Scissors beats Paper");
         return 1;
     }
     else if(humanChoice == "rock" && computerChoice == "scissors"){
+        humanScore++
         updateResultsDiv("You WIN! Rock beats Scissors");
         return 1;
     }
     else {
+        computerScore++;
         updateResultsDiv(`You Lose! ${computerChoice[0].toUpperCase()+computerChoice.slice(1).toUpperCase()} beats ${humanChoice[0]+computerChoice.slice(1)}`);
         return 2;
     }
@@ -59,11 +67,11 @@ buttonContainer.appendChild(buttonPaper);
 buttonContainer.appendChild(buttonScissors);
 buttonContainer.appendChild(buttonRock);
 
-
+let humanScore = 0;
+let computerScore = 0;
 buttonContainer.addEventListener("click", (e) => {
     let playerSelection = e.target.innerText;
     playRound(playerSelection, getComputerChoice());
-    
 });
 
 let results = document.createElement("div");
