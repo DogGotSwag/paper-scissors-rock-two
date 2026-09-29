@@ -53,6 +53,11 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+function resetScores(){
+    humanScore = 0;
+    computerScore = 0;
+}
+
 
 let buttonPaper = document.createElement("button");
 buttonPaper.innerText = "paper";
@@ -74,9 +79,11 @@ buttonContainer.addEventListener("click", (e) => {
     playRound(playerSelection, getComputerChoice());
 
     if(humanScore === 5) {
+        resetScores();
         results.textContent = "U are the winner!!";
     } 
     if(computerScore == 5){
+        resetScores();
         results.textContent = "U lost to the bot wat a loser";
     }
 });
