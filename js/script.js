@@ -14,6 +14,11 @@ function getHumanChoice() {
     return prompt("paper, scissors or rock???");
 }
 
+function updateResultsDiv(newResultsText) {
+    let results = document.querySelector(".results");
+    results.textContent = newResultsText;
+}
+
 function playRound(humanChoice, computerChoice) {
     humanChoice.toLowerCase();
     computerChoice.toLowerCase();
@@ -62,6 +67,7 @@ buttonContainer.addEventListener("click", (e) => {
 });
 
 let results = document.createElement("div");
+results.classList.add("results");
 
 
 document.body.appendChild(buttonContainer);
