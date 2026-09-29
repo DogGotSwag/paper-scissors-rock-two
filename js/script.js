@@ -54,10 +54,15 @@ buttonContainer.appendChild(buttonPaper);
 buttonContainer.appendChild(buttonScissors);
 buttonContainer.appendChild(buttonRock);
 
-document.body.appendChild(buttonContainer);
 
 buttonContainer.addEventListener("click", (e) => {
     let playerSelection = e.target.innerText;
     playRound(playerSelection, getComputerChoice());
     
 });
+
+let results = document.createElement("div");
+
+
+document.body.appendChild(buttonContainer);
+document.body.appendChild(results);
